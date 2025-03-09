@@ -16,6 +16,13 @@ DISK_FREE=$(df -h / | awk 'NR==2 {print $4}')
 DISK_USAGE_PERCENT=$(df -h / | awk 'NR==2 {print $5}')
 
 
+# Get top 5 processes by CPU usage
+TOP_CPU=$(ps -eo pid,ppid,cmd,%cpu --sort=-%cpu | head -6)
+
+# Get top 5 processes by memory usage
+TOP_MEM=$(ps -eo pid,ppid,cmd,%mem --sort=-%mem | head -6)
+
+
 # Display System Stats
 echo "======================================"
 echo "       SERVER PERFORMANCE STATS      "
@@ -38,4 +45,12 @@ echo "   Total: $DISK_TOTAL"
 echo "   Used:  $DISK_USED"
 echo "   Free:  $DISK_FREE"
 echo "   Usage: $DISK_USAGE_PERCENT"
+echo ""
+
+echo "4. Top 5 Processes by CPU Usage:"
+echo "$TOP_CPU"
+echo ""
+
+echo "5. Top 5 Processes by Memory Usage:"
+echo "$TOP_MEM"
 echo ""
