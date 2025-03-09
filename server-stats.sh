@@ -9,6 +9,13 @@ MEMORY_USED=$(free -m | awk 'NR==2 {print $3}')
 MEMORY_FREE=$(free -m | awk 'NR==2 {print $4}')
 MEMORY_USAGE_PERCENT=$((100 * MEMORY_USED / MEMORY_TOTAL))
 
+# Get Disk usage
+DISK_TOTAL=$(df -h / | awk 'NR==2 {print $2}')
+DISK_USED=$(df -h / | awk 'NR==2 {print $3}')
+DISK_FREE=$(df -h / | awk 'NR==2 {print $4}')
+DISK_USAGE_PERCENT=$(df -h / | awk 'NR==2 {print $5}')
+
+
 # Display System Stats
 echo "======================================"
 echo "       SERVER PERFORMANCE STATS      "
@@ -24,4 +31,11 @@ echo "   Total: $MEMORY_TOTAL MB"
 echo "   Used:  $MEMORY_USED MB"
 echo "   Free:  $MEMORY_FREE MB"
 echo "   Usage: $MEMORY_USAGE_PERCENT%"
+echo ""
+
+echo "3. Disk Usage (Root Partition):"
+echo "   Total: $DISK_TOTAL"
+echo "   Used:  $DISK_USED"
+echo "   Free:  $DISK_FREE"
+echo "   Usage: $DISK_USAGE_PERCENT"
 echo ""
