@@ -47,9 +47,9 @@ chmod +x server-stats.sh
 ./server-stats.sh
 
 
-### Example Output
+### Example Output:
 
-### SERVER PERFORMANCE STATS
+## SERVER PERFORMANCE STATS
  
 1. CPU Usage:          15.2%
 2. Memory Usage:       64%
