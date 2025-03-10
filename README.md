@@ -1,32 +1,36 @@
 
-# server-performance-stats
+# Server-Performance-Stats
 
+<<<<<<< HEAD
 ## Project URL
 [Click here to view the project](https://github.com/ibewilson/server-performance-stats)
  
 
 ## Project Overview  
+=======
+## Project Overview
+>>>>>>> 58b3c99 (Added GitHub Project Page URL)
 This bash script monitors system performance by collecting CPU, memory, disk, network, and security metrics.
-It helps DevOps and Security Engineers track real-time server health and identify potential performance bottlenecks. 
+It helps DevOps and Security Engineers track real-time server health and identify potential performance bottlenecks.
 
 -----------------------------------------------------------------------------
 
-## Features  
+## Features
 
-### System Performance Monitoring  
+### System Performance Monitoring
 - CPU Usage Monitoring - Displays real-time CPU load.
 - Memory Usage Tracking - Shows used, free, and total RAM.
 - Disk Usage Monitoring - Checks available and used disk space.
 - Process Monitoring - Lists the top 5 CPU & memory-consuming processes.
 - System Load Average - Displays system load for 1, 5, and 15-minute intervals.
 
-### User & System Uptime Information  
+### User & System Uptime Information
 - System Uptime - Displays how long the system has been running.
 - Active User Sessions - Lists logged-in users.
 - Last System Boot Time - Shows the last time the server restarted.
 - Number of Running Processes - Counts the total number of running processes.
 
-### Security & Network Monitoring  
+### Security & Network Monitoring
 - Failed SSH Login Attempts - Counts unauthorized login attempts.
 - Open Network Ports - Lists listening ports on the server.
 - Top 3 Memory-Heavy Users - Displays the users consuming the most RAM.
@@ -35,10 +39,10 @@ It helps DevOps and Security Engineers track real-time server health and identif
 
 -----------------------------------------------------------------------------
 
-## Installation & Usage  
+## Installation & Usage
 
-### 1. Clone the Repository 
- 
+### 1. Clone the Repository
+
 In bash:
 
 git clone https://github.com/ibewilson/server-performance-stats.git
@@ -51,11 +55,17 @@ chmod +x server-stats.sh
 ./server-stats.sh
 
 
+### Example Output
 
+<<<<<<< HEAD
 ## Example Output:
 
 ###  SERVER PERFORMANCE STATS      
 
+=======
+### SERVER PERFORMANCE STATS
+ 
+>>>>>>> 58b3c99 (Added GitHub Project Page URL)
 1. CPU Usage:          15.2%
 2. Memory Usage:       64%
 3. Disk Usage:         45%
@@ -69,7 +79,6 @@ chmod +x server-stats.sh
  3456  2345 /usr/bin/node           15.8
  4567  3456 /usr/bin/java           10.3
  5678  4567 /usr/bin/python          8.1
-
 
 ### Project Page
 https://ibewilson.github.io/server-performance-stats/
