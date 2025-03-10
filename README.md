@@ -1,5 +1,5 @@
 
-# server-performance-stats
+# Server-Performance-Stats
 
 ## Project Overview
 This bash script monitors system performance by collecting CPU, memory, disk, network, and security metrics.
@@ -49,7 +49,7 @@ chmod +x server-stats.sh
 
 ### Example Output:
 
-## SERVER PERFORMANCE STATS
+#### SERVER PERFORMANCE STATS
  
 1. CPU Usage:          15.2%
 2. Memory Usage:       64%
