@@ -3,9 +3,6 @@
 
 ## Project URL
 [Click here to view the project](https://github.com/ibewilson/server-performance-stats)
-
-## Project Page  
-[Project Link](https://ibewilson.github.io/server-performance-stats/)
  
 
 ## Project Overview  
@@ -55,11 +52,10 @@ chmod +x server-stats.sh
 
 
 
-### Example Output:
+## Example Output:
 
-=======================================
-       SERVER PERFORMANCE STATS      
-=======================================
+###  SERVER PERFORMANCE STATS      
+
 1. CPU Usage:          15.2%
 2. Memory Usage:       64%
 3. Disk Usage:         45%
@@ -76,7 +72,7 @@ chmod +x server-stats.sh
 
 
 ### Project Page
-Project Link
+https://ibewilson.github.io/server-performance-stats/
 
 ### Author
 Ibewilson
